@@ -33,11 +33,11 @@
     "stock": {
       "type": "integer"
     },
-    "catagories": {
+    "catagory": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::catagory.catagory",
-      "mappedBy": "products"
+      "inversedBy": "products"
     }
   }
 }
